@@ -1,0 +1,26 @@
+$buttonsColor: #fff;
+$buttonsBgColor: #5de35d;
+$buttonsBgColorHover: rgba($buttonsBgColor, 0.88);
+$buttonsBgColorActive: rgba($buttonsBgColor, 0.6);
+
+.counterBtn {
+  font-size: 1em;
+  padding: .5em;
+  border-radius: .5em;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  min-width: 15em;
+  color: $buttonsColor;
+  background-color:$buttonsBgColor;
+  transition: background-color .2s linear;
+  
+  &:hover {
+    background-color: $buttonsBgColorHover;
+    transition: background-color .2s linear;
+  }
+
+  &:active {
+    background-color: $buttonsBgColorActive;
+  }
+}
